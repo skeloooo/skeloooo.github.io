@@ -73,22 +73,43 @@ h1{
 
 
 .image-text {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    color: white;
+    color: black;
     font-size: 20px;
     font-weight: bold;
+}
+
+.exo{
+   display: flex;
 }
 
 h1{
     text-align: center;
     text-transform: uppercase;
+    text-decoration: solid;
  }
 
-.button{
+
+ #programme{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0%;
+    gap: 100px;
+    padding: 5%;
+    font-size: smaller;
+ }
+
+ .égoisme img{
+   width: 100%;
+ }
+
+ .button{
     border-radius: 10px;
     text-decoration: none;
     padding: 8px 12px;
@@ -117,6 +138,11 @@ h1{
     background: darkblue;
     color: white;
     border: 2px solid black;
+ }
+
+ h2{
+    text-align: center;
+    text-transform: uppercase;
  }
 
 
