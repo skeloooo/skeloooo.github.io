@@ -51,14 +51,6 @@ h1{
    text-transform: uppercase;
 }
 
-.avatar{
-   width: 100px;
-   height: 100px;
-   object-fit: cover;
-   border-radius: 100%;
-   border: black solid 3px;
-}
-
 .compte{
    display: flex;
    align-items: center;
@@ -73,19 +65,22 @@ h1{
 
 
 .image-text {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   width: 100%;
+   color: black;
+   padding: 20px;
+}
+
+.image-text p{
+   font-size: 20px;
+   padding: 16px
 }
 
 .exo{
    display: flex;
+   justify-content: center;
 }
 
 h1{
@@ -109,46 +104,112 @@ h1{
    width: 100%;
  }
 
- .button{
-    border-radius: 10px;
-    text-decoration: none;
-    padding: 8px 12px;
-    transition: all .3s ease-in-out;
- }
- 
- .button.primary{
-    background: white;
-    color: black;
-    border: 2px solid black;
- }
- 
- .button.secondary{
-    background: white;
-    color: black;
-    border: 2px solid black;
- }
- 
- .button.primary:hover{
-    background: darkblue;
-    color: black;
-    border: 2px solid black;
- }
- 
- .button.secondary:hover{
-    background: darkblue;
-    color: white;
-    border: 2px solid black;
- }
-
  h2{
     text-align: center;
     text-transform: uppercase;
  }
 
+h5{
+   text-transform: uppercase;
+   text-align: center;
+}
+
+#technologie {
+   display: flex;
+   align-items: center;
+}
+#technologie img {
+   height: 250px;
+   width: auto;
+}
+#technologies {
+   margin-left: 60px;
+}
+
+#joueur_sortie {
+   font-size: 50px;
+   text-align: center;
+   margin-top: 100px;
+   margin-bottom: 50px;
+   transition: 0.3s;
+   }
+   #joueur_sortie:hover{
+      color:darkblue;
+      } 
+   #espoirs {
+       display: flex;
+       justify-content: center;
+       gap: 100px;
+       margin: 35px;
+   }
+   .espoir_container {
+               display: flex;
+               flex-direction: column;
+               background-image: url('assets/neobrain_background.jpg');
+               gap: 20px;
+               padding: 20px;
+               text-align: center;
+               border: 0;
+               border-radius: 10%;
+       max-width: 900px;
+           }
+   .nom_joueur {
+       margin: auto;
+       font-size: 20px;
+       width: 80%;
+       transition: 0.3s;
+   }
+   .joueur_p {
+       font-size: 13px;
+       color: black;
+   }
+
+       .button{
+         border-radius: 8px;
+         text-decoration: none;
+         padding: 8px 12px;
+         transition: all .4s ease-in-out;
+      }
+      
+      .button.primary{
+         background: black;
+         color: white;
+         border: 2px solid black;
+      }
+      
+      .button.secondary{
+         background: white;
+         color: black;
+         border: 2px solid black;
+      }
+      
+      .button.primary:hover{
+         background: white;
+         color: black;
+         border: 2px solid black;
+      }
+      
+      .button.secondary:hover{
+         background: darkblue;
+         color: white;
+         border: 2px solid black;
+      }    
+      
+   .espoir_container img{
+         width: 250px;
+         height: 250px;
+         object-fit: cover;
+   }
+
+   h5{
+      border: solid;
+   }
+
 
  footer {
-    background-color: darkblue;
-    color: black;
-    text-align: center;
-    padding: 20px;
+   display: flex;
+   background-color: darkblue;
+   color: white;
+   padding: 20px;
+   justify-content: space-around;
  }
